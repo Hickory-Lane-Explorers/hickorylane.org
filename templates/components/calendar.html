@@ -1,0 +1,26 @@
+{% component calendar.month(name: string, year: integer, month_number: integer, session_days: string) %}
+{% set seconds_per_day = 86400 %}
+{% set month_text = "0" ~ month_number if month_number < 10 else "" ~ month_number %}
+{% set month_date = year ~ "-" ~ month_text %}
+{% set first_day = month_date ~ "-01" %}
+{% set first_column = (first_day | date(format="%w") | int) + 1 %}
+{% set any_day_of_next_month = (first_day | date(format="%s") | int) + 32 * seconds_per_day %}
+{% set next_month_first_day = any_day_of_next_month | date(format="%Y-%m-01") %}
+{% set last_day = (next_month_first_day | date(format="%s") | int) - seconds_per_day %}
+{% set day_count = last_day | date(format="%d") | int %}
+{% set session_day_texts = session_days | replace(from=" ", to="") | split(pat=",") %}
+{% set session_day_list %}{% for session_day_text in session_day_texts %}{{ (month_date ~ "-" ~ session_day_text) | date(format="%-d") }}{% if not loop.last %}, {% endif %}{% endfor %}{% endset %}
+<section class="calendar__month">
+  <h3 class="heading heading--tiny">{{ name }}</h3>
+  <div class="calendar__days" style="--first-column: {{ first_column }}" role="img" aria-label="{{ name }} {{ year }}: {{ session_day_list }}">
+    {% for day_number in range(start=1, end=day_count + 1) %}
+    {% set day_text = "0" ~ day_number if day_number < 10 else "" ~ day_number %}
+    {% if day_text in session_day_texts %}
+    <span class="calendar__day calendar__day--session">{{ day_number }}</span>
+    {% else %}
+    <span class="calendar__day"></span>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endcomponent calendar.month %}

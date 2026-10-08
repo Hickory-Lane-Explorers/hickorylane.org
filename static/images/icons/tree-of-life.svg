@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="medallion-fill" cx="0.36" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#FFFCF2"/>
+      <stop offset="0.65" stop-color="#F7EDD4"/>
+      <stop offset="1" stop-color="#E4D3AC"/>
+    </radialGradient>
+    <filter id="soft-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <radialGradient id="sky" cx="0.4" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#EAF6F8"/>
+      <stop offset="0.6" stop-color="#BFE3EE"/>
+      <stop offset="1" stop-color="#8CC4D8"/>
+    </radialGradient>
+    <linearGradient id="earth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A5A36"/>
+      <stop offset="1" stop-color="#4F3220"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8DB85A"/>
+      <stop offset="1" stop-color="#55803A"/>
+    </linearGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C89464"/>
+      <stop offset="0.45" stop-color="#9A643A"/>
+      <stop offset="1" stop-color="#5E3A22"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8DC8A"/>
+      <stop offset="0.5" stop-color="#E8B040"/>
+      <stop offset="1" stop-color="#B57A22"/>
+    </linearGradient>
+    <radialGradient id="crown" gradientUnits="userSpaceOnUse" cx="205" cy="120" r="210">
+      <stop offset="0" stop-color="#8DB85A"/>
+      <stop offset="0.5" stop-color="#5E8C3A"/>
+      <stop offset="1" stop-color="#34592A"/>
+    </radialGradient>
+    <linearGradient id="leaf-dark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#55883A"/>
+      <stop offset="0.5" stop-color="#4A7A33"/>
+      <stop offset="0.5" stop-color="#3E6B2E"/>
+      <stop offset="1" stop-color="#2F5425"/>
+    </linearGradient>
+    <linearGradient id="leaf-light" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A9CC74"/>
+      <stop offset="0.5" stop-color="#8DB85A"/>
+      <stop offset="0.5" stop-color="#77A548"/>
+      <stop offset="1" stop-color="#5E8C3A"/>
+    </linearGradient>
+    <linearGradient id="leaf-gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F8DC8A"/>
+      <stop offset="0.5" stop-color="#F2C14E"/>
+      <stop offset="0.5" stop-color="#E8B040"/>
+      <stop offset="1" stop-color="#D9982B"/>
+    </linearGradient>
+    <linearGradient id="leaf-rust" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E88A62"/>
+      <stop offset="0.5" stop-color="#D2603F"/>
+      <stop offset="0.5" stop-color="#C05236"/>
+      <stop offset="1" stop-color="#A8402A"/>
+    </linearGradient>
+    <path id="leaf" d="M0 0 C-30 -28 -34 -78 0 -120 C34 -78 30 -28 0 0 Z"/>
+    <clipPath id="crown-clip">
+      <circle cx="256" cy="250" r="178"/>
+    </clipPath>
+    <clipPath id="scene-clip">
+      <circle cx="256" cy="250" r="186"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="256" cy="264" r="230" fill="#26361F" opacity="0.45" filter="url(#soft-blur)"/>
+  <circle cx="256" cy="250" r="232" fill="url(#medallion-fill)"/>
+  <circle cx="256" cy="250" r="224" fill="none" stroke="#D9C598" stroke-width="2"/>
+
+  <g clip-path="url(#scene-clip)">
+    <rect x="60" y="54" width="392" height="392" fill="url(#sky)"/>
+    <path d="M60 322 C150 306 362 306 452 322 V446 H60 Z" fill="url(#earth)"/>
+    <path d="M60 322 C150 306 362 306 452 322 V334 C362 318 150 318 60 334 Z" fill="url(#grass)"/>
+    <g fill="none" stroke="#D9A86E" stroke-linecap="round">
+      <path d="M244 326 C232 352 196 352 160 380" stroke-width="10"/>
+      <path d="M268 326 C280 352 316 352 352 380" stroke-width="10"/>
+      <path d="M256 326 C252 360 262 384 252 420" stroke-width="9"/>
+      <path d="M236 336 C212 340 180 336 138 350" stroke-width="6"/>
+      <path d="M276 336 C300 340 332 336 374 350" stroke-width="6"/>
+      <path d="M246 348 C234 378 214 396 200 420" stroke-width="6"/>
+      <path d="M266 348 C278 378 298 396 312 420" stroke-width="6"/>
+      <path d="M196 362 C184 376 176 390 172 408" stroke-width="4"/>
+      <path d="M316 362 C328 376 336 390 340 408" stroke-width="4"/>
+    </g>
+  </g>
+
+  <g fill="none" stroke="url(#trunk)" stroke-linecap="round">
+    <path d="M256 280 C246 236 196 232 118 228" stroke-width="9"/>
+    <path d="M256 280 C266 236 316 232 394 228" stroke-width="9"/>
+    <path d="M234 246 C200 226 170 200 150 168" stroke-width="8"/>
+    <path d="M278 246 C312 226 342 200 362 168" stroke-width="8"/>
+    <path d="M250 262 C236 214 214 164 192 124" stroke-width="9"/>
+    <path d="M262 262 C276 214 298 164 320 124" stroke-width="9"/>
+    <path d="M254 250 C250 200 240 150 232 104" stroke-width="8"/>
+    <path d="M258 250 C262 200 272 150 280 104" stroke-width="8"/>
+    <path d="M256 210 L256 128" stroke-width="6"/>
+  </g>
+  <path d="M222 330 C240 312 242 286 240 252 C246 240 266 240 272 252 C270 286 272 312 290 330 C270 322 242 322 222 330 Z" fill="url(#trunk)"/>
+  <path d="M246 262 C247 286 246 304 238 320" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.25"/>
+
+  <g clip-path="url(#crown-clip)">
+    <g transform="translate(256 192) scale(0.93) translate(-256 -178)">
+    <circle cx="256" cy="138" r="66" fill="url(#crown)"/>
+    <circle cx="198" cy="160" r="54" fill="url(#crown)"/>
+    <circle cx="314" cy="160" r="54" fill="url(#crown)"/>
+    <circle cx="152" cy="200" r="42" fill="url(#crown)"/>
+    <circle cx="360" cy="200" r="42" fill="url(#crown)"/>
+    <circle cx="256" cy="192" r="58" fill="url(#crown)"/>
+    <circle cx="204" cy="212" r="38" fill="url(#crown)"/>
+    <circle cx="308" cy="212" r="38" fill="url(#crown)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(339 185) rotate(31) scale(0.24)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(340 205) rotate(42) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(348 122) rotate(14) scale(0.19)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(166 164) rotate(-26) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(282 188) rotate(41) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(190 199) rotate(-52) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(161 233) rotate(-85) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(126 184) rotate(-76) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(334 226) rotate(77) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(279 136) rotate(27) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(300 173) rotate(46) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(383 186) rotate(79) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-gold)" transform="translate(232 213) rotate(-7) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(322 208) rotate(32) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(240 140) rotate(10) scale(0.24)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(167 216) rotate(-62) scale(0.17)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(249 157) rotate(-12) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(250 180) rotate(15) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-rust)" transform="translate(368 213) rotate(86) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(271 167) rotate(36) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(233 125) rotate(26) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(291 150) rotate(19) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(194 135) rotate(-2) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(367 229) rotate(97) scale(0.19)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(304 239) rotate(91) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(212 190) rotate(-53) scale(0.24)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(380 199) rotate(61) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(118 209) rotate(-47) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-rust)" transform="translate(226 91) rotate(-1) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(349 215) rotate(35) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(230 150) rotate(20) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(268 187) rotate(25) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(260 231) rotate(5) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(328 241) rotate(60) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(320 228) rotate(62) scale(0.24)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(235 77) rotate(-29) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(217 135) rotate(3) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(162 181) rotate(-40) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(144 165) rotate(-87) scale(0.17)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(223 183) rotate(-38) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(308 199) rotate(36) scale(0.19)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(208 225) rotate(-77) scale(0.19)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(300 102) rotate(31) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(336 125) rotate(69) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(197 215) rotate(-69) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(298 189) rotate(28) scale(0.17)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(339 138) rotate(20) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(256 203) rotate(1) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(309 149) rotate(51) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(150 191) rotate(-60) scale(0.24)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(131 225) rotate(-71) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(173 203) rotate(-63) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(284 217) rotate(20) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(361 159) rotate(56) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(359 134) rotate(54) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(308 134) rotate(28) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(224 164) rotate(-8) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-gold)" transform="translate(319 111) rotate(32) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(174 175) rotate(-44) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(200 160) rotate(-23) scale(0.24)"/>
+    <use href="#leaf" fill="url(#leaf-rust)" transform="translate(182 235) rotate(-72) scale(0.19)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(253 130) rotate(26) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-gold)" transform="translate(220 114) rotate(20) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(301 223) rotate(62) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-gold)" transform="translate(149 227) rotate(-98) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-gold)" transform="translate(286 163) rotate(31) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(361 194) rotate(88) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(292 113) rotate(15) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(180 110) rotate(-57) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(246 220) rotate(-1) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(224 239) rotate(-94) scale(0.24)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(204 147) rotate(2) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(330 174) rotate(6) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(147 147) rotate(-77) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(238 99) rotate(-20) scale(0.24)"/>
+    <use href="#leaf" fill="url(#leaf-rust)" transform="translate(380 217) rotate(82) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(376 163) rotate(69) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-gold)" transform="translate(271 154) rotate(28) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-gold)" transform="translate(348 236) rotate(112) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(273 86) rotate(-15) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(204 106) rotate(-9) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(289 200) rotate(50) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(194 184) rotate(-19) scale(0.24)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(396 199) rotate(77) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(196 243) rotate(-54) scale(0.19)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(368 178) rotate(22) scale(0.17)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(144 240) rotate(-111) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(272 207) rotate(12) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(322 190) rotate(19) scale(0.19)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(237 174) rotate(3) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-rust)" transform="translate(318 125) rotate(30) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(204 123) rotate(-48) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-rust)" transform="translate(264 118) rotate(30) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(135 211) rotate(-38) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(283 237) rotate(88) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(212 205) rotate(-32) scale(0.19)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(164 126) rotate(-29) scale(0.17)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(177 151) rotate(-77) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-rust)" transform="translate(397 216) rotate(113) scale(0.19)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(167 141) rotate(-21) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(222 223) rotate(-43) scale(0.17)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(118 194) rotate(-34) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(255 97) rotate(-8) scale(0.23)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(154 210) rotate(-49) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(190 170) rotate(-26) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-gold)" transform="translate(259 245) rotate(64) scale(0.22)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(334 158) rotate(46) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(291 90) rotate(14) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(384 232) rotate(65) scale(0.19)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(313 176) rotate(77) scale(0.19)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(231 193) rotate(-28) scale(0.20)"/>
+    <use href="#leaf" fill="url(#leaf-gold)" transform="translate(386 172) rotate(68) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(249 84) rotate(-2) scale(0.24)"/>
+    <use href="#leaf" fill="url(#leaf-rust)" transform="translate(237 244) rotate(-111) scale(0.24)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(258 74) rotate(36) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-rust)" transform="translate(295 126) rotate(-4) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(254 143) rotate(-29) scale(0.18)"/>
+    <use href="#leaf" fill="url(#leaf-dark)" transform="translate(213 246) rotate(-93) scale(0.17)"/>
+    <use href="#leaf" fill="url(#leaf-gold)" transform="translate(235 230) rotate(-55) scale(0.21)"/>
+    <use href="#leaf" fill="url(#leaf-light)" transform="translate(178 190) rotate(-62) scale(0.21)"/>
+    </g>
+  </g>
+
+  <circle cx="256" cy="250" r="186" fill="none" stroke="#7A5216" stroke-width="12" opacity="0.2" transform="translate(2 3)"/>
+  <circle cx="256" cy="250" r="186" fill="none" stroke="url(#brass)" stroke-width="10"/>
+  <circle cx="256" cy="250" r="191" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.5"/>
+</svg>

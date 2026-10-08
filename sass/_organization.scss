@@ -1,0 +1,25 @@
+.activities {
+  columns: 2;
+  column-gap: var(--column-gap);
+}
+
+.activities__item {
+  break-inside: avoid;
+  padding-bottom: 1.25rem;
+}
+
+.activities__item p {
+  margin: 0;
+}
+
+.closing-text {
+  margin: 2.5rem 0 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+@media (max-width: 40rem) {
+  .activities {
+    columns: 1;
+  }
+}

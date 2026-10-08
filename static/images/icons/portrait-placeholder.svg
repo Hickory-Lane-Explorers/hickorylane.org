@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <radialGradient id="backdrop" cx="0.4" cy="0.35" r="0.9">
+      <stop offset="0" stop-color="#7F9872"/>
+      <stop offset="1" stop-color="#66805A"/>
+    </radialGradient>
+    <radialGradient id="medallion-fill" cx="0.36" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#FFFCF2"/>
+      <stop offset="0.65" stop-color="#F7EDD4"/>
+      <stop offset="1" stop-color="#E4D3AC"/>
+    </radialGradient>
+    <filter id="soft-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <linearGradient id="leaf-dark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#55883A"/>
+      <stop offset="0.5" stop-color="#4A7A33"/>
+      <stop offset="0.5" stop-color="#3E6B2E"/>
+      <stop offset="1" stop-color="#2F5425"/>
+    </linearGradient>
+    <linearGradient id="leaf-light" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A9CC74"/>
+      <stop offset="0.5" stop-color="#8DB85A"/>
+      <stop offset="0.5" stop-color="#77A548"/>
+      <stop offset="1" stop-color="#5E8C3A"/>
+    </linearGradient>
+    <path id="leaf" d="M0 0 C-30 -28 -34 -78 0 -120 C34 -78 30 -28 0 0 Z"/>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#backdrop)"/>
+  <circle cx="300" cy="312" r="176" fill="#26361F" opacity="0.4" filter="url(#soft-blur)"/>
+  <circle cx="300" cy="300" r="178" fill="url(#medallion-fill)"/>
+  <circle cx="300" cy="300" r="170" fill="none" stroke="#D9C598" stroke-width="2"/>
+
+  <g transform="translate(300 418)">
+    <path d="M0 0 C-4 -70 6 -130 0 -200" fill="none" stroke="#4A7A33" stroke-width="9" stroke-linecap="round"/>
+    <g transform="translate(-1 -62) rotate(-60)">
+      <use href="#leaf" fill="url(#leaf-light)" transform="scale(0.78)"/>
+      <path d="M0 -4 L0 -78" stroke="#4A7A33" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    </g>
+    <g transform="translate(1 -98) rotate(56)">
+      <use href="#leaf" fill="url(#leaf-dark)" transform="scale(0.86)"/>
+      <path d="M0 -4 L0 -86" stroke="#2F5425" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    </g>
+    <g transform="translate(2 -140) rotate(-50)">
+      <use href="#leaf" fill="url(#leaf-dark)" transform="scale(0.7)"/>
+      <path d="M0 -4 L0 -70" stroke="#2F5425" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    </g>
+    <g transform="translate(2 -170) rotate(44)">
+      <use href="#leaf" fill="url(#leaf-light)" transform="scale(0.62)"/>
+      <path d="M0 -4 L0 -62" stroke="#4A7A33" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    </g>
+    <g transform="translate(0 -196) rotate(-4)">
+      <use href="#leaf" fill="url(#leaf-light)" transform="scale(0.6)"/>
+      <path d="M0 -4 L0 -60" stroke="#4A7A33" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    </g>
+  </g>
+</svg>

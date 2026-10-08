@@ -1,0 +1,37 @@
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, calc(7 * var(--day-size) + 6 * var(--day-gap)));
+  gap: 1.5rem clamp(1rem, 3vw, 2rem);
+}
+
+.calendar__days {
+  display: grid;
+  grid-template-columns: repeat(7, var(--day-size));
+  gap: var(--day-gap);
+}
+
+.calendar__day {
+  aspect-ratio: 1;
+  background-color: var(--color-blank-day);
+}
+
+.calendar__day:first-child {
+  grid-column-start: var(--first-column);
+}
+
+.calendar__day--session {
+  display: grid;
+  place-items: center;
+  background-color: var(--color-calendar-day);
+  color: var(--color-calendar-day-text);
+  font-size: calc(var(--day-size) * 0.55);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+@media (max-width: 48rem) {
+  .calendar {
+    --day-size: 1.25rem;
+  }
+}

@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="site-footer__content">
+    <p><strong>{{ every_page.footer.organization_name }}</strong> {{ every_page.footer.tagline }}</p>
+    <p>
+      {{ every_page.footer.service_area }} •
+      Phone: {{ <text.telephone_link phone={every_page.footer.phone} /> }} •
+      Email: <a class="site-footer__email" href="mailto:{{ every_page.footer.email }}">{{ every_page.footer.email }}</a>
+    </p>
+    <p>{{ every_page.footer.copyright }}</p>
+  </div>
+</footer>

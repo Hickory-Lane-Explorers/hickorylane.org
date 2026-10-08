@@ -1,0 +1,22 @@
+{% component media.photograph(path: string, description: string, maximum_width: integer, class: string = "", loading: string = "lazy") %}
+{% if not path %}{{ throw(message="A required photograph is empty in website-content.") }}{% endif %}
+{% set source_path = path | trim_start(pat="/") %}
+{% set source = get_image_metadata(path=source_path) %}
+{% set target_width = maximum_width if source.width > maximum_width else source.width %}
+{% set resized = resize_image(path=source_path, width=target_width, op="fit_width", format="webp", quality=82) %}
+<img class="{{ class }}" src="{{ resized.url }}" alt="{{ description }}" width="{{ resized.width }}" height="{{ resized.height }}" loading="{{ loading }}" decoding="async">
+{% endcomponent media.photograph %}
+
+{% component media.portrait(path: string, name: string, edge_length: integer) %}
+{% if path %}
+{% set resized = resize_image(path=path | trim_start(pat="/"), width=edge_length, height=edge_length, op="fill", format="webp", quality=82) %}
+<img class="portrait" src="{{ resized.url }}" alt="Photograph of {{ name }}" width="{{ edge_length }}" height="{{ edge_length }}" loading="lazy" decoding="async">
+{% else %}
+<img class="portrait" src="{{ get_url(path='images/icons/portrait-placeholder.svg') }}" alt="" width="{{ edge_length }}" height="{{ edge_length }}" loading="lazy">
+{% endif %}
+{% endcomponent media.portrait %}
+
+{% component media.icon(path: string) %}
+{% if not path %}{{ throw(message="A required icon is empty in website-content.") }}{% endif %}
+<img class="icon" src="{{ get_url(path=path | trim_start(pat='/')) }}" alt="" width="512" height="512" loading="lazy">
+{% endcomponent media.icon %}

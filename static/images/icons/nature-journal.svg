@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="medallion-fill" cx="0.36" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#FFFCF2"/>
+      <stop offset="0.65" stop-color="#F7EDD4"/>
+      <stop offset="1" stop-color="#E4D3AC"/>
+    </radialGradient>
+    <filter id="soft-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7FA850"/>
+      <stop offset="1" stop-color="#3E6B2E"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F0E6CF"/>
+    </linearGradient>
+    <linearGradient id="ring-metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EEF1F3"/>
+      <stop offset="0.5" stop-color="#A9B5BD"/>
+      <stop offset="1" stop-color="#64737E"/>
+    </linearGradient>
+    <linearGradient id="sketch-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BFE3EE"/>
+      <stop offset="1" stop-color="#EAF6F8"/>
+    </linearGradient>
+    <linearGradient id="mountain-far" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9C4CC"/>
+      <stop offset="1" stop-color="#8493A0"/>
+    </linearGradient>
+    <linearGradient id="mountain-near" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E9A25F"/>
+      <stop offset="0.5" stop-color="#D9772F"/>
+      <stop offset="0.5" stop-color="#C4622A"/>
+      <stop offset="1" stop-color="#A8402A"/>
+    </linearGradient>
+    <linearGradient id="meadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8DB85A"/>
+      <stop offset="1" stop-color="#55803A"/>
+    </linearGradient>
+    <radialGradient id="autumn-crown" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#F8DC8A"/>
+      <stop offset="0.5" stop-color="#EDA93C"/>
+      <stop offset="1" stop-color="#D9772F"/>
+    </radialGradient>
+    <linearGradient id="bark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A06A3C"/>
+      <stop offset="1" stop-color="#6B4226"/>
+    </linearGradient>
+    <g id="binding-ring">
+      <ellipse cx="0" cy="18" rx="8" ry="6" fill="#3E4A53" opacity="0.5"/>
+      <rect x="-6" y="-16" width="12" height="36" rx="6" fill="url(#ring-metal)"/>
+      <rect x="-4" y="-12" width="3" height="26" rx="1.5" fill="#FFFFFF" opacity="0.6"/>
+    </g>
+    <clipPath id="sketch-clip">
+      <rect x="150" y="196" width="212" height="150" rx="6"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="256" cy="264" r="230" fill="#26361F" opacity="0.45" filter="url(#soft-blur)"/>
+  <circle cx="256" cy="250" r="232" fill="url(#medallion-fill)"/>
+  <circle cx="256" cy="250" r="224" fill="none" stroke="#D9C598" stroke-width="2"/>
+
+  <g transform="rotate(-5 256 256)">
+    <rect x="126" y="146" width="276" height="246" rx="16" fill="#4A3421" opacity="0.4" filter="url(#soft-blur)"/>
+    <rect x="116" y="130" width="280" height="250" rx="16" fill="url(#cover)"/>
+    <rect x="126" y="140" width="260" height="6" rx="3" fill="#FFFFFF" opacity="0.2"/>
+    <rect x="128" y="150" width="256" height="220" rx="8" fill="#D8C9A3"/>
+    <rect x="128" y="146" width="256" height="220" rx="8" fill="url(#paper)"/>
+
+    <g clip-path="url(#sketch-clip)">
+      <rect x="150" y="196" width="212" height="150" fill="url(#sketch-sky)"/>
+      <circle cx="318" cy="228" r="16" fill="#F8DC8A"/>
+      <path d="M196 330 L262 236 L300 290 L322 262 L372 330 Z" fill="url(#mountain-far)"/>
+      <path d="M222 346 L292 252 L362 346 Z" fill="url(#mountain-near)"/>
+      <path d="M292 252 L278 271 L288 278 L296 268 L306 280 L310 276 Z" fill="#FFFDF7" opacity="0.9"/>
+      <path d="M150 322 C210 306 300 310 362 326 V346 H150 Z" fill="url(#meadow)"/>
+      <rect x="192" y="284" width="12" height="44" fill="url(#bark)"/>
+      <circle cx="198" cy="262" r="34" fill="url(#autumn-crown)"/>
+      <circle cx="176" cy="282" r="20" fill="url(#autumn-crown)"/>
+      <circle cx="222" cy="282" r="20" fill="url(#autumn-crown)"/>
+    </g>
+    <rect x="150" y="196" width="212" height="150" rx="6" fill="none" stroke="#D8C9A3" stroke-width="2"/>
+
+    <use href="#binding-ring" transform="translate(152 146)"/>
+    <use href="#binding-ring" transform="translate(178 146)"/>
+    <use href="#binding-ring" transform="translate(204 146)"/>
+    <use href="#binding-ring" transform="translate(230 146)"/>
+    <use href="#binding-ring" transform="translate(256 146)"/>
+    <use href="#binding-ring" transform="translate(282 146)"/>
+    <use href="#binding-ring" transform="translate(308 146)"/>
+    <use href="#binding-ring" transform="translate(334 146)"/>
+    <use href="#binding-ring" transform="translate(360 146)"/>
+  </g>
+</svg>

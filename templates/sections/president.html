@@ -1,0 +1,8 @@
+<section class="page-section president">
+  {{ <media.photograph path={page_content.president.photograph} description={"Photograph of " ~ page_content.president.name} maximum_width={800} class="president__photograph" /> }}
+  <div>
+    <h2 class="member-name member-name--large">{{ page_content.president.name }}</h2>
+    <p class="member-role member-role--large">{{ page_content.president.role }}</p>
+    {{ <text.paragraphs markdown_text={page_content.president.biography} /> }}
+  </div>
+</section>

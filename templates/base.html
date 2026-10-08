@@ -1,0 +1,25 @@
+{% set every_page = load_data(path="website-content/every-page.yaml") %}
+{% set appearance = load_data(path="website-content/appearance.yaml") %}
+{% set page_content = load_data(path=section.extra.content_file) %}
+{% set home_address = get_url(path="@/_index.md") %}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if current_url == home_address %}{{ every_page.site_name }}{% else %}{{ page_content.menu_label }} - {{ every_page.site_name }}{% endif %}</title>
+  <meta name="description" content="{{ every_page.site_description }}">
+  <link rel="icon" href="{{ get_url(path='images/icons/favicon.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ get_url(path='site.css', cachebust=true) }}">
+  {% include "partials/appearance.html" %}
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  {% include "partials/header.html" %}
+  {% include "partials/banner.html" %}
+  <main id="main-content">
+    {% block main %}{% endblock main %}
+  </main>
+  {% include "partials/footer.html" %}
+</body>
+</html>

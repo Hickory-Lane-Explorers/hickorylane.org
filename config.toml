@@ -1,0 +1,8 @@
+base_url = "https://hickorylane.org"
+title = "Hickory Lane Explorers"
+default_language = "en"
+compile_sass = true
+build_search_index = false
+
+[extra]
+menu_sections = ["_index.md", "our-organization/_index.md", "our-board/_index.md"]

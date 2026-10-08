@@ -1,0 +1,10 @@
+<section class="page-section">
+  <ul class="highlights three-column-grid">
+    {% for highlight in page_content.highlights %}
+    <li class="highlights__item">
+      {{ <media.icon path={highlight.icon} /> }}
+      <p>{{ highlight.text }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

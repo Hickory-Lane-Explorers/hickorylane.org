@@ -1,0 +1,19 @@
+{% component text.paragraphs(markdown_text: string) %}
+<div class="paragraphs">{{ markdown_text | markdown | safe }}</div>
+{% endcomponent text.paragraphs %}
+
+{% component text.labeled_facts(facts: array) %}
+<dl class="labeled-facts">
+  {% for fact in facts %}
+  <div class="labeled-facts__row">
+    <dt>{{ fact.label }}:</dt>
+    <dd>{{ fact.text }}</dd>
+  </div>
+  {% endfor %}
+</dl>
+{% endcomponent text.labeled_facts %}
+
+{% component text.telephone_link(phone: string) %}
+{% set dial_number = phone | replace(from="(", to="") | replace(from=")", to="") | replace(from=" ", to="-") %}
+<a href="tel:{{ dial_number }}">{{ phone }}</a>
+{% endcomponent text.telephone_link %}

@@ -1,0 +1,12 @@
+<section class="page-section">
+  <ul class="board-members">
+    {% for member in page_content.members %}
+    <li class="board-members__item">
+      {{ <media.portrait path={member.photograph or ""} name={member.name} edge_length={600} /> }}
+      <h2 class="member-name">{{ member.name }}</h2>
+      <p class="member-role">{{ member.role }}</p>
+      {{ <text.paragraphs markdown_text={member.biography} /> }}
+    </li>
+    {% endfor %}
+  </ul>
+</section>

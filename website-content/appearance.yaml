@@ -1,0 +1,11 @@
+colors:
+  background: "#5a734d"
+  text: "#ffffff"
+  highlight: "#f2c14e"
+  form_card: "#6f8862"
+  calendar_day: "#fbf5e6"
+  calendar_day_text: "#2f3a29"
+
+fonts:
+  display: humanist
+  body: humanist

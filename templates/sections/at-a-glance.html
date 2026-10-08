@@ -1,0 +1,8 @@
+<section class="page-section icon-beside-text three-column-grid">
+  <div class="icon-beside-text__icon">{{ <media.icon path={page_content.at_a_glance.icon} /> }}</div>
+  <div class="icon-beside-text__text">
+    <h2 class="heading heading--small">{{ page_content.at_a_glance.heading }}</h2>
+    {{ <text.labeled_facts facts={page_content.at_a_glance.facts} /> }}
+    {{ <text.paragraphs markdown_text={page_content.at_a_glance.text} /> }}
+  </div>
+</section>

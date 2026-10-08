@@ -1,0 +1,15 @@
+<section class="page-section">
+  <h2 class="heading heading--centered">{{ page_content.what_we_do.heading }}</h2>
+  <div class="icon-beside-text three-column-grid">
+    <div class="icon-beside-text__icon">{{ <media.icon path={page_content.what_we_do.icon} /> }}</div>
+    <ul class="activities icon-beside-text__text">
+      {% for activity in page_content.what_we_do.activities %}
+      <li class="activities__item">
+        <h3 class="heading heading--tiny">{{ activity.heading }}</h3>
+        <p>{{ activity.text }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <p class="closing-text">{{ page_content.what_we_do.closing_text }}</p>
+</section>

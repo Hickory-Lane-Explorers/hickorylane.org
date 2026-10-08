@@ -1,0 +1,7 @@
+<section class="page-section text-beside-photograph">
+  <div class="text-beside-photograph__text">
+    <h2 class="heading heading--small">{{ page_content.welcome.heading }}</h2>
+    {{ <text.paragraphs markdown_text={page_content.welcome.text} /> }}
+  </div>
+  {{ <media.photograph path={page_content.welcome.photograph} description={page_content.welcome.photograph_description} maximum_width={1100} class="text-beside-photograph__photograph" /> }}
+</section>

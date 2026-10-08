@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="medallion-fill" cx="0.36" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#FFFCF2"/>
+      <stop offset="1" stop-color="#EBDDB9"/>
+    </radialGradient>
+  </defs>
+  <circle cx="32" cy="32" r="31" fill="#5A734D"/>
+  <circle cx="32" cy="32" r="27" fill="url(#medallion-fill)"/>
+  <path d="M32 50 C31 40 33 34 32 26" fill="none" stroke="#4A7A33" stroke-width="3" stroke-linecap="round"/>
+  <path d="M32 40 C22 40 15 33 14 22 C25 22 32 29 32 40 Z" fill="#8DB85A"/>
+  <path d="M32 34 C32 22 39 14 50 13 C50 25 43 33 32 34 Z" fill="#3E6B2E"/>
+</svg>

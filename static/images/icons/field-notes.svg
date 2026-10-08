@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="medallion-fill" cx="0.36" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#FFFCF2"/>
+      <stop offset="0.65" stop-color="#F7EDD4"/>
+      <stop offset="1" stop-color="#E4D3AC"/>
+    </radialGradient>
+    <filter id="soft-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F0E6CF"/>
+    </linearGradient>
+    <linearGradient id="binding" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7FA850"/>
+      <stop offset="1" stop-color="#3E6B2E"/>
+    </linearGradient>
+    <linearGradient id="pencil-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8DC8A"/>
+      <stop offset="0.34" stop-color="#F6CF62"/>
+      <stop offset="0.34" stop-color="#F2C14E"/>
+      <stop offset="0.67" stop-color="#EDB43C"/>
+      <stop offset="0.67" stop-color="#D9982B"/>
+      <stop offset="1" stop-color="#C58525"/>
+    </linearGradient>
+    <linearGradient id="pencil-wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3DDB8"/>
+      <stop offset="1" stop-color="#C89464"/>
+    </linearGradient>
+    <linearGradient id="pencil-metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF1F3"/>
+      <stop offset="0.5" stop-color="#A9B5BD"/>
+      <stop offset="1" stop-color="#64737E"/>
+    </linearGradient>
+    <linearGradient id="pencil-eraser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E88A62"/>
+      <stop offset="1" stop-color="#A8402A"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="256" cy="264" r="230" fill="#26361F" opacity="0.45" filter="url(#soft-blur)"/>
+  <circle cx="256" cy="250" r="232" fill="url(#medallion-fill)"/>
+  <circle cx="256" cy="250" r="224" fill="none" stroke="#D9C598" stroke-width="2"/>
+
+  <g transform="rotate(-7 240 250)">
+    <rect x="142" y="112" width="204" height="284" rx="16" fill="#4A3421" opacity="0.4" filter="url(#soft-blur)"/>
+    <rect x="320" y="176" width="34" height="30" rx="7" fill="#F2C14E"/>
+    <rect x="320" y="220" width="34" height="30" rx="7" fill="#E58A5A"/>
+    <rect x="320" y="264" width="34" height="30" rx="7" fill="#C8503C"/>
+    <rect x="134" y="100" width="204" height="284" rx="16" fill="url(#paper)"/>
+    <path d="M134 116 A16 16 0 0 1 150 100 H322 A16 16 0 0 1 338 116 V150 H134 Z" fill="url(#binding)"/>
+    <rect x="134" y="150" width="204" height="6" fill="#2F5425" opacity="0.2"/>
+    <rect x="150" y="108" width="172" height="6" rx="3" fill="#FFFFFF" opacity="0.3"/>
+    <g stroke="#9DBB7A" stroke-width="7" stroke-linecap="round">
+      <path d="M162 190 H310"/>
+      <path d="M162 222 H290"/>
+      <path d="M162 254 H310"/>
+      <path d="M162 286 H268"/>
+      <path d="M162 318 H296"/>
+      <path d="M162 350 H240"/>
+    </g>
+  </g>
+
+  <ellipse cx="318" cy="352" rx="96" ry="10" fill="#4A3421" opacity="0.3" filter="url(#soft-blur)" transform="rotate(-42 318 352)"/>
+  <g transform="translate(232 410) rotate(-42)">
+    <path d="M178 -17 L178 17 L222 0 Z" fill="url(#pencil-wood)"/>
+    <path d="M207 -5.8 L207 5.8 L222 0 Z" fill="#3E4A53"/>
+    <rect x="44" y="-17" width="134" height="34" fill="url(#pencil-body)"/>
+    <rect x="22" y="-17" width="24" height="34" fill="url(#pencil-metal)"/>
+    <path d="M28 -17 V17 M34 -17 V17 M40 -17 V17" stroke="#64737E" stroke-width="1.5" opacity="0.5"/>
+    <path d="M22 -17 H10 A10 10 0 0 0 0 -7 V7 A10 10 0 0 0 10 17 H22 Z" fill="url(#pencil-eraser)"/>
+  </g>
+</svg>

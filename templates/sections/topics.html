@@ -1,0 +1,12 @@
+<section class="page-section">
+  <h2 class="heading">{{ page_content.topics.heading }}</h2>
+  <dl class="topics">
+    {% for session in page_content.topics.sessions %}
+    <div class="topics__row">
+      <dt>{{ session.date }}</dt>
+      <dd>{{ session.topic }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+  <p class="footnote">{{ page_content.topics.footnote }}</p>
+</section>

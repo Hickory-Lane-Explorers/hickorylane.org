@@ -1,0 +1,13 @@
+<section class="page-section registration">
+  <div>
+    <h2 class="heading">{{ page_content.registration.heading }}</h2>
+    {{ <text.paragraphs markdown_text={page_content.registration.text} /> }}
+  </div>
+  <a class="form-card" href="{{ page_content.registration.form_address }}" target="_blank" rel="noopener">
+    {{ <media.photograph path={page_content.registration.form_preview} description="" maximum_width={800} class="form-card__preview" /> }}
+    <span class="form-card__text">
+      <span class="form-card__title">{{ page_content.registration.form_title }}</span>
+      <span class="form-card__description">{{ page_content.registration.form_description }}</span>
+    </span>
+  </a>
+</section>

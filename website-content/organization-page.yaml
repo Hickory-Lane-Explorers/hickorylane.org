@@ -1,0 +1,75 @@
+menu_label: Our Organization
+
+banner:
+  title: Our Organization
+  subtitle: Learning about the world around us, one discovery at a time
+
+at_a_glance:
+  icon: /images/icons/location.svg
+  heading: Hickory Lane Explorers At a Glance
+  facts:
+    - label: Founded
+      text: "2026"
+    - label: Location
+      text: Southeastern Wisconsin
+    - label: Focus
+      text: Nature • Science • Jewish Learning
+  text: |
+    Hickory Lane Explorers, Inc. is a Wisconsin nonprofit corporation created to provide children with meaningful opportunities to learn through nature, science, outdoor exploration, and Jewish learning.
+
+    We believe children learn best when they have room to wonder, ask questions, get their hands dirty, and discover things for themselves.
+
+    A walk through the woods can become a science lesson. A bird in the backyard can lead to a study of habitat and migration. A simple nature journal can teach a child to slow down and really notice the world around them.
+
+    Our goal is simple: to help children become curious, capable, thoughtful explorers who appreciate the natural world and understand their responsibility to care for it.
+
+what_we_do:
+  heading: What We Do
+  icon: /images/icons/tools.svg
+  activities:
+    - heading: Nature & Outdoor Education
+      text: Children learn by observing, exploring, measuring, collecting information, and spending time outdoors.
+    - heading: Science Learning
+      text: We encourage children to investigate how the natural world works rather than simply memorize facts.
+    - heading: Jewish Learning
+      text: Jewish teachings are woven naturally into our time outdoors, helping children see the connection between Torah, gratitude, responsibility, and the world G-d created.
+    - heading: Practical Skills
+      text: Children learn to use tools such as magnifying glasses, binoculars, compasses, field guides, maps, and nature journals.
+    - heading: Seasonal Exploration
+      text: Our subjects follow the natural year in Wisconsin, from fall leaves and migrating birds to winter wildlife and spring growth.
+    - heading: Creative Work
+      text: Drawing, journaling, building, mapping, and other hands-on projects give children ways to record and share what they discover.
+  closing_text: We want children to leave each program knowing a little more about the world around them and being eager to look a little closer the next time they are outside.
+
+approach_to_learning:
+  heading: Our Approach To Learning
+  icon: /images/icons/nature-journal.svg
+  text: |
+    Hickory Lane Explorers is intentionally hands-on.
+
+    Rather than beginning with a textbook and asking children to remember the information, we often begin with a question:
+
+    What do you notice?
+
+    What do you wonder?
+
+    How could we find out?
+
+    Children may learn how to use a compass and then use it to make their own map. They may study birds and then go outside to look for signs of those birds in their own neighborhood.
+
+    Along the way, children practice observation, patience, problem-solving, careful work, and good stewardship while learning real science.
+
+    We also recognize that children do not all learn in the same way. Some children come alive when they can move, build, investigate, or work with their hands. Nature provides a setting where there is room for different kinds of learners to find their place.
+
+jewish_learning:
+  heading: Jewish Learning
+  icon: /images/icons/tree-of-life.svg
+  subheading: Jewish Learning & Values
+  text: |
+    Jewish learning is an important part of who we are.
+
+    Our programs draw on Jewish teachings and values in a natural way rather than treating Jewish learning as something separate from the rest of the experience.
+
+    When we study birds, we can talk about G-d's creation. When we explore a forest, we can consider our responsibility to care for the world around us. When children work together, we can talk about kindness, responsibility, gratitude, and being a good neighbor.
+
+    We want children to see that learning about the natural world and living a Jewish life are not separate paths. They can walk together.

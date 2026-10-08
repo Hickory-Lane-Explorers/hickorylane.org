@@ -1,0 +1,115 @@
+menu_label: Home
+
+banner:
+  title: Hickory Lane Explorers Inc.
+  subtitle: Where Nature, Curiosity, and Jewish Values Grow Together
+
+welcome:
+  heading: Welcome to Hickory Lane Explorers
+  text: |
+    **Discover the joy of learning through nature.**
+
+    Hickory Lane Explorers, Inc. is a nonprofit organization dedicated to inspiring curiosity, confidence, and a lifelong appreciation for the natural world through hands-on outdoor education. Our programs combine science, environmental stewardship, creative exploration, and Jewish values to provide meaningful learning experiences for children and families in southeastern Wisconsin.
+
+    Whether identifying native plants, observing wildlife, conducting nature investigations, or exploring seasonal changes, every adventure encourages children to ask questions, make discoveries, and develop a deeper connection with the world around them.
+
+    **Join us as we explore, discover, and grow—one adventure at a time**
+  photograph: /images/photographs/children-exploring-trail.jpg
+  photograph_description: Two children explore a stone ledge next to a paved trail in a green forest.
+
+highlights:
+  - icon: /images/icons/explore-nature.svg
+    text: Children learn by exploring natural spaces through hands-on experiences that foster curiosity and confidence.
+  - icon: /images/icons/science.svg
+    text: Our programs encourage observation, questioning, experimentation, and creative problem-solving through engaging science and nature activities.
+  - icon: /images/icons/tree-of-life.svg
+    text: We weave Jewish teachings into outdoor experiences, helping children develop gratitude, responsibility, kindness, and stewardship for G-d's creation.
+
+after_school_program:
+  icon: /images/icons/calendar.svg
+  heading: After-School Program
+  text: |
+    Our flagship after-school program encourages children to discover the outdoors through guided nature investigations, environmental science, creative projects, and seasonal exploration. Each week features a new theme designed to spark curiosity and build a deeper understanding of the natural world.
+  details:
+    - label: Ages
+      text: Kindergarten and Up (6+)
+    - label: When
+      text: Thursdays • 4:30–5:30 PM (Doors open at 4:15 PM)
+    - label: Location
+      text: Provided Upon Registration
+    - label: Cost
+      text: $10 per child, per session*
+    - label: What to bring
+      text: a water bottle
+    - label: What to wear
+      text: "Clothes that can handle outdoor exploration (and a little nature dirt!). In the winter use layers: insulated jacket, snow pants, waterproof boots, hat, and warm gloves/mittens."
+  footnote: "*Please inquire about early bird discount pricing"
+
+seasonal_nature_series:
+  icon: /images/icons/field-notes.svg
+  heading: Seasonal Nature Series
+  text: |
+    Throughout the year, Hickory Lane Explorers offers themed learning experiences. Each series highlights seasonal wildlife, habitats, and ecological changes through engaging outdoor adventures. Every unit combines science, creativity, outdoor exploration, and Jewish values to encourage children to see the beauty and purpose within creation.
+
+dates:
+  heading: Dates
+  start_year: 2026
+  months:
+    - month: September
+      days: 03, 10, 17, 24
+    - month: October
+      days: 08, 15, 22, 29
+    - month: November
+      days: 05, 12, 19
+    - month: December
+      days: 03, 17, 24, 31
+    - month: January
+      days: 07, 14, 21, 28
+    - month: February
+      days: 04, 11, 18, 25
+    - month: March
+      days: 04, 11, 18, 25
+    - month: April
+      days: 01, 08, 15
+    - month: May
+      days: 06, 13, 20, 27
+    - month: June
+      days: "03"
+
+topics:
+  heading: Fall Topics
+  sessions:
+    - date: Sept. 03
+      topic: Tools of the Explorer
+    - date: Sept. 10
+      topic: The Earth is a Peppercorn
+    - date: Sept. 17
+      topic: The Magnifying Glass
+    - date: Sept. 24
+      topic: The Field Journal & Color Grid
+    - date: Oct. 08
+      topic: Binoculars
+    - date: Oct. 15
+      topic: The Compass
+    - date: Oct. 22
+      topic: Soil and Water Testing
+    - date: Oct. 29
+      topic: Dichotomous Identification Keys
+    - date: Nov. 05
+      topic: Spatial Mapping
+    - date: Nov. 12
+      topic: Annual Fall Night Sky Viewing*
+    - date: Nov. 19
+      topic: Capstone Presentation
+  footnote: "*Dates may change based on guest speakers availability and weather"
+
+registration:
+  heading: Ready to Start Your Adventure?
+  text: |
+    Whether your child is fascinated by birds, loves discovering insects, enjoys creating nature-inspired art, or simply thrives outdoors, Hickory Lane Explorers offers a place to explore, learn, and grow.
+
+    Registration is now open for our Thursday Nature Explorers After-School Program.
+  form_address: https://forms.gle/ha8u3nsi2MpT4TZg6
+  form_preview: /images/photographs/registration-form-preview.png
+  form_title: Registration 2026-2027
+  form_description: All Students New Year Registration (use duplicate questions for additional children)

@@ -1,0 +1,10 @@
+<section class="page-section">
+  <h2 class="heading heading--centered">{{ page_content.jewish_learning.heading }}</h2>
+  <div class="icon-beside-text three-column-grid">
+    <div class="icon-beside-text__icon">{{ <media.icon path={page_content.jewish_learning.icon} /> }}</div>
+    <div class="icon-beside-text__text">
+      <h3 class="heading heading--tiny">{{ page_content.jewish_learning.subheading }}</h3>
+      {{ <text.paragraphs markdown_text={page_content.jewish_learning.text} /> }}
+    </div>
+  </div>
+</section>

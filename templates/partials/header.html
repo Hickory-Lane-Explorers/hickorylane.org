@@ -1,0 +1,14 @@
+<header class="site-header">
+  <a class="site-header__name" href="{{ home_address }}">{{ every_page.site_name }}</a>
+  <nav class="site-menu" aria-label="Main menu">
+    <ul class="site-menu__list">
+      {% for section_path in config.extra.menu_sections %}
+      {% set menu_section = get_section(path=section_path) %}
+      {% set menu_content = load_data(path=menu_section.extra.content_file) %}
+      <li>
+        <a class="site-menu__link" href="{{ menu_section.permalink }}"{% if menu_section.permalink == current_url %} aria-current="page"{% endif %}>{{ menu_content.menu_label }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

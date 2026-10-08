@@ -1,0 +1,45 @@
+menu_label: Our Board
+
+banner:
+  title: Our Board
+  subtitle: ""
+
+introduction: |
+  Hickory Lane Explorers, Inc. was organized as a Wisconsin nonprofit corporation in July 2026. The corporation provides the structure through which the work of Hickory Lane Explorers is planned, managed, funded, and carried out.
+
+  The organization is governed by a volunteer Board of Directors. The Board is responsible for overseeing the organization, maintaining appropriate financial and corporate records, approving policies, and making decisions in keeping with the organization's purposes.
+
+  We take this responsibility seriously. Even as a small and growing organization, we believe that good stewardship begins with doing things carefully from the beginning.
+
+president:
+  name: Rebecca Plotke
+  role: President & Founder
+  photograph: /images/photographs/rebecca-plotke.png
+  biography: |
+    Rebecca Plotke is the founder and president of Hickory Lane Explorers and the educator behind its curriculum. She holds a Master’s degree in Library Science (MLS) and has taught at the university level. Today, she homeschools her children, ages 4–9, while developing and teaching the Hickory Lane Explorers program.
+
+    As an observant Jewish mother and educator, Rebecca believes that children learn best when they are given the freedom to wonder, explore, and experience the world firsthand. Her curriculum brings together nature study, science, outdoor skills, and Jewish learning, with an emphasis on curiosity, responsibility, and appreciation for the world around us.
+
+    Hickory Lane Explorers grew from her desire to give children a place to learn beyond the walls of a traditional classroom—through hands-on experiences, thoughtful questions, and time spent outdoors.
+
+members:
+  - name: Michael Plotke
+    role: Vice President
+    photograph: /images/photographs/michael-plotke.png
+    biography: |
+      Michael Plotke is a senior software engineer who brings a practical, problem-solving approach to Hickory Lane Explorers. He helps lead the program’s building projects, outdoor skills activities, and hands-on challenges, encouraging children to learn by doing and figuring things out for themselves. Michael also helps shape the Jewish learning throughout the program, providing insight into Chabad and Chassidic teachings and helping connect the children’s experiences in nature with Jewish thought and values.
+  - name: Anna Vilinskiy
+    role: Secretary
+    photograph: ""
+    biography: |
+      Anna Vilinskiy is a Senior Project Manager at a regional bank and a passionate advocate for children’s education. She believes in encouraging curiosity, self-sufficiency, and a “let’s try” attitude—giving children the confidence to explore new ideas and learn through experience. Outside of Hickory Lane Explorers, Anna enjoys spending time with family and friends, reading, traveling, and cooking.
+  - name: Lesley Boaz
+    role: Treasurer
+    photograph: /images/photographs/lesley-boaz.jpg
+    biography: |
+      Lesley Boaz is a nurse practitioner with a Ph.D. from Marquette University who brings a thoughtful, practical perspective to Hickory Lane Explorers. Outside of healthcare, she enjoys gardening, traveling the world with her daughter, and encouraging curiosity about the world around us. A former Strongwoman and powerlifting competitor, Lesley also brings a strong appreciation for discipline, perseverance, and the value of hands-on learning.
+  - name: Erica Knell
+    role: Board Member
+    photograph: ""
+    biography: |
+      Erica Knell is a mother of three who brings a background in early childhood education to Hickory Lane Explorers. She enjoys spending time with family and friends and is actively involved in serving her community through volunteering. Erica’s experience with young children and her commitment to family and community bring a thoughtful, hands-on perspective to the work of Hickory Lane Explorers.

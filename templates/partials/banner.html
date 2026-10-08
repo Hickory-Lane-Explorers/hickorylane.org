@@ -1,0 +1,9 @@
+<section class="banner">
+  {{ <media.photograph path={every_page.banner_photograph} description="" maximum_width={1920} class="banner__photograph" loading="eager" /> }}
+  <div class="banner__text">
+    <h1 class="banner__title">{{ page_content.banner.title }}</h1>
+    {% if page_content.banner.subtitle %}
+    <p class="banner__subtitle">{{ page_content.banner.subtitle }}</p>
+    {% endif %}
+  </div>
+</section>
