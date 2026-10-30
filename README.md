@@ -19,15 +19,17 @@ A static website made with [Zola](https://www.getzola.org/) 0.23 (Tera 2 templat
 | `templates/` | `base.html`, one template for each page, `sections/` for page parts, `partials/` for header, banner, and footer, `components/` for shared Tera components |
 | `sass/` | Styles, one partial file for each area. Sizes are in `_tokens.scss`. Colors and fonts are in `website-content/appearance.yaml`, so editors can change them. |
 | `content/` | Three small files that connect a web address to a template and a content file |
-| `.pages.yml` | Settings for the Pages CMS web editor |
+| `static/admin/` | The Sveltia CMS web editor: the page, and the settings in `config.yml` |
 
 ## Web editor setup
 
-[Pages CMS](https://pagescms.org) is free and edits the files in a GitHub repository.
+[Sveltia CMS](https://sveltiacms.app) is free and runs in the browser at `/admin/`. It connects directly to GitHub with a token. No other server is involved.
 
-1. Put this project in a GitHub repository and connect a host that runs `zola build` after each change.
-2. Sign in at https://app.pagescms.org with GitHub and open the repository. Pages CMS reads `.pages.yml`.
-3. Invite editors by email in the collaborator settings. Editors do not need a GitHub account.
+1. Make a GitHub account for each editor, and give the account write access to the repository in the organization.
+2. Make a fine-grained personal access token. Select the organization as the resource owner, select only this repository, and set **Contents** to **Read and write**.
+3. Open https://hickorylane.org/admin/, click **Sign In Using Access Token**, and paste the token. The browser keeps the token until you sign out.
+
+The script version in `static/admin/index.html` is fixed, with a hash that the browser checks. To update Sveltia CMS, change the version and the hash together.
 
 ## Icon style
 

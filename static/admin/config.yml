@@ -1,0 +1,247 @@
+backend:
+  name: github
+  repo: Hickory-Lane-Explorers/hickorylane.org
+  branch: main
+  auth_methods: [token]
+
+site_url: https://hickorylane.org
+display_url: https://hickorylane.org
+
+media_folder: /static/images/photographs
+public_folder: /images/photographs
+
+field_defaults:
+  richtext:
+    editor_components: []
+    linked_images: false
+
+singletons:
+  - name: home-page
+    label: Home page
+    file: website-content/home-page.yaml
+    format: yaml
+    editor: { preview: false }
+    fields:
+      - { name: menu_label, label: Name in the menu, widget: string }
+      - name: banner
+        label: Banner at the top
+        widget: object
+        fields: &banner_fields
+          - { name: title, label: Title, widget: string }
+          - { name: subtitle, label: Subtitle, widget: string, required: false }
+      - name: welcome
+        label: Welcome
+        widget: object
+        fields:
+          - { name: heading, label: Heading, widget: string, required: false }
+          - { name: text, label: Text, widget: richtext, required: false }
+          - { name: photograph, label: Photograph, widget: image }
+          - { name: photograph_description, label: Photograph description, hint: One sentence for people who cannot see the photograph., widget: string, required: false }
+      - name: highlights
+        label: Three highlights
+        widget: list
+        required: false
+        summary: "{{fields.text | truncate(50)}}"
+        fields:
+          - { name: icon, label: Icon, widget: image, media_folder: /static/images/icons, public_folder: /images/icons }
+          - { name: text, label: Text, widget: text, required: false }
+      - name: after_school_program
+        label: After-School Program
+        widget: object
+        fields:
+          - { name: icon, label: Icon, widget: image, media_folder: /static/images/icons, public_folder: /images/icons }
+          - { name: heading, label: Heading, widget: string, required: false }
+          - { name: text, label: Text, widget: richtext, required: false }
+          - name: details
+            label: Details
+            widget: list
+            required: false
+            summary: "{{fields.label}}"
+            fields:
+              - { name: label, label: Label, hint: "For example: Cost", widget: string, required: false }
+              - { name: text, label: Text, widget: text, required: false }
+          - { name: footnote, label: Small note below, widget: string, required: false }
+      - name: seasonal_nature_series
+        label: Seasonal Nature Series
+        widget: object
+        fields:
+          - { name: icon, label: Icon, widget: image, media_folder: /static/images/icons, public_folder: /images/icons }
+          - { name: heading, label: Heading, widget: string, required: false }
+          - { name: text, label: Text, widget: richtext, required: false }
+      - name: dates
+        label: Dates
+        widget: object
+        fields:
+          - { name: heading, label: Heading, hint: "The website adds the years, for example: Dates 2026 - 2027", widget: string, required: false }
+          - { name: start_year, label: Start year, hint: "The year of the first month, for example: 2026", widget: number, value_type: int }
+          - name: months
+            label: Months
+            widget: list
+            required: false
+            summary: "{{fields.month}}"
+            fields:
+              - { name: month, label: Month, widget: select, options: [January, February, March, April, May, June, July, August, September, October, November, December] }
+              - { name: days, label: Days, hint: "Two digits for each day, for example: 03, 10, 17, 24", widget: string, required: false }
+      - name: topics
+        label: Topics
+        widget: object
+        fields:
+          - { name: heading, label: Heading, widget: string, required: false }
+          - name: sessions
+            label: Sessions
+            widget: list
+            required: false
+            summary: "{{fields.date}}: {{fields.topic}}"
+            fields:
+              - { name: date, label: Date, hint: "For example: Sept. 03", widget: string, required: false }
+              - { name: topic, label: Topic, widget: string, required: false }
+          - { name: footnote, label: Small note below, widget: string, required: false }
+      - name: registration
+        label: Registration
+        widget: object
+        fields:
+          - { name: heading, label: Heading, widget: string, required: false }
+          - { name: text, label: Text, widget: richtext, required: false }
+          - { name: form_address, label: Web address of the registration form, widget: string, required: false }
+          - { name: form_preview, label: Picture of the form, widget: image }
+          - { name: form_title, label: Form title, widget: string, required: false }
+          - { name: form_description, label: Form description, widget: string, required: false }
+
+  - name: organization-page
+    label: Our Organization page
+    file: website-content/organization-page.yaml
+    format: yaml
+    editor: { preview: false }
+    fields:
+      - { name: menu_label, label: Name in the menu, widget: string }
+      - { name: banner, label: Banner at the top, widget: object, fields: *banner_fields }
+      - name: at_a_glance
+        label: At a Glance
+        widget: object
+        fields:
+          - { name: icon, label: Icon, widget: image, media_folder: /static/images/icons, public_folder: /images/icons }
+          - { name: heading, label: Heading, widget: string, required: false }
+          - name: facts
+            label: Facts
+            widget: list
+            required: false
+            summary: "{{fields.label}}"
+            fields:
+              - { name: label, label: Label, hint: "For example: Founded", widget: string, required: false }
+              - { name: text, label: Text, widget: string, required: false }
+          - { name: text, label: Text, widget: richtext, required: false }
+      - name: what_we_do
+        label: What We Do
+        widget: object
+        fields:
+          - { name: heading, label: Heading, widget: string, required: false }
+          - { name: icon, label: Icon, widget: image, media_folder: /static/images/icons, public_folder: /images/icons }
+          - name: activities
+            label: Activities
+            widget: list
+            required: false
+            summary: "{{fields.heading}}"
+            fields:
+              - { name: heading, label: Heading, widget: string, required: false }
+              - { name: text, label: Text, widget: text, required: false }
+          - { name: closing_text, label: Closing text, widget: text, required: false }
+      - name: approach_to_learning
+        label: Our Approach To Learning
+        widget: object
+        fields:
+          - { name: heading, label: Heading, widget: string, required: false }
+          - { name: icon, label: Icon, widget: image, media_folder: /static/images/icons, public_folder: /images/icons }
+          - { name: text, label: Text, widget: richtext, required: false }
+      - name: jewish_learning
+        label: Jewish Learning
+        widget: object
+        fields:
+          - { name: heading, label: Heading, widget: string, required: false }
+          - { name: icon, label: Icon, widget: image, media_folder: /static/images/icons, public_folder: /images/icons }
+          - { name: subheading, label: Smaller heading, widget: string, required: false }
+          - { name: text, label: Text, widget: richtext, required: false }
+
+  - name: board-page
+    label: Our Board page
+    file: website-content/board-page.yaml
+    format: yaml
+    editor: { preview: false }
+    fields:
+      - { name: menu_label, label: Name in the menu, widget: string }
+      - { name: banner, label: Banner at the top, widget: object, fields: *banner_fields }
+      - { name: introduction, label: Introduction, widget: richtext, required: false }
+      - name: president
+        label: President
+        widget: object
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: role, label: Role, widget: string, required: false }
+          - { name: photograph, label: Photograph, widget: image }
+          - { name: biography, label: Biography, widget: richtext, required: false }
+      - name: members
+        label: Other board members
+        widget: list
+        required: false
+        summary: "{{fields.name}}"
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: role, label: Role, widget: string, required: false }
+          - { name: photograph, label: Photograph, hint: Leave empty to show the leaf picture., widget: image, required: false }
+          - { name: biography, label: Biography, widget: richtext, required: false }
+
+  - name: every-page
+    label: Every page (banner photograph and footer)
+    file: website-content/every-page.yaml
+    format: yaml
+    editor: { preview: false }
+    fields:
+      - { name: site_name, label: Site name, widget: string }
+      - { name: site_description, label: Site description for search engines, widget: text, required: false }
+      - { name: banner_photograph, label: Banner photograph, widget: image }
+      - name: footer
+        label: Footer
+        widget: object
+        fields:
+          - { name: organization_name, label: Organization name, widget: string, required: false }
+          - { name: tagline, label: Tagline, widget: string, required: false }
+          - { name: service_area, label: Service area, widget: string, required: false }
+          - { name: phone, label: Phone, widget: string, required: false }
+          - { name: email, label: Email, widget: string, required: false }
+          - { name: copyright, label: Copyright line, widget: string, required: false }
+
+  - name: appearance
+    label: Colors and fonts
+    file: website-content/appearance.yaml
+    format: yaml
+    editor: { preview: false }
+    fields:
+      - name: colors
+        label: Colors
+        widget: object
+        fields:
+          - { name: background, label: Background of every page, widget: color, allowInput: true }
+          - { name: text, label: Text on the background, widget: color, allowInput: true }
+          - { name: highlight, label: Highlight, hint: "The line under the current menu item, the board member roles, and the outline around a selected link", widget: color, allowInput: true }
+          - { name: form_card, label: Registration form box, widget: color, allowInput: true }
+          - { name: calendar_day, label: Class days in the calendar, widget: color, allowInput: true }
+          - { name: calendar_day_text, label: Numbers on class days in the calendar, widget: color, allowInput: true }
+      - name: fonts
+        label: Fonts
+        hint: Each choice uses fonts that are already on the visitor's device, so the look changes a little between devices.
+        widget: object
+        fields:
+          - name: display
+            label: Headings, menu, names, and footer
+            widget: select
+            options: &font_options
+              - { value: system, label: "System: the standard font of each device" }
+              - { value: neo-grotesque, label: "Neo-Grotesque: plain and neutral, like Helvetica or Arial" }
+              - { value: humanist, label: "Humanist: warm and easy to read, like Gill Sans or Calibri" }
+              - { value: geometric-humanist, label: "Geometric Humanist: round and clean, like Avenir or Montserrat" }
+              - { value: classical-humanist, label: "Classical Humanist: elegant, like Optima" }
+              - { value: rounded, label: "Rounded: soft and friendly, with round ends" }
+              - { value: transitional, label: "Transitional: a classic book font, like Charter or Cambria" }
+              - { value: old-style, label: "Old Style: a traditional book font, like Palatino" }
+              - { value: slab-serif, label: "Slab Serif: strong, with block-shaped ends, like Rockwell" }
+              - { value: antique, label: "Antique: old-fashioned and sturdy, like Bookman or Georgia" }
+          - { name: body, label: Paragraph text, widget: select, options: *font_options }

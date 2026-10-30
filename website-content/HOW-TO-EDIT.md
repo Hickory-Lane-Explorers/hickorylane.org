@@ -12,7 +12,7 @@ All words and pictures of the website are in this folder. You do not need to tou
 
 ## The easy way: the web editor
 
-Open https://app.pagescms.org and sign in with the link from your invitation email. Select a page on the left, change the text in the form, and press **Save**. The website updates by itself a few minutes later.
+Open https://hickorylane.org/admin/. The first time on a device, click **Sign In Using Access Token** and paste your token. Select a page, change the text in the form, and press **Save**. The website updates by itself a few minutes later.
 
 To change a photograph, click the photograph field and upload a new picture. The website makes the picture the correct size.
 
