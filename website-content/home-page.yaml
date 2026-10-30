@@ -1,22 +1,19 @@
 menu_label: Home
-
 banner:
   title: Hickory Lane Explorers Inc.
   subtitle: Where Nature, Curiosity, and Jewish Values Grow Together
-
 welcome:
   heading: Welcome to Hickory Lane Explorers
-  text: |
+  text: |-
     **Discover the joy of learning through nature.**
 
-    Hickory Lane Explorers, Inc. is a nonprofit organization dedicated to inspiring curiosity, confidence, and a lifelong appreciation for the natural world through hands-on outdoor education. Our programs combine science, environmental stewardship, creative exploration, and Jewish values to provide meaningful learning experiences for children and families in southeastern Wisconsin.
+    Hickory Lane Explorers, Inc. is a 501(c)(3) nonprofit organization dedicated to inspiring curiosity, confidence, and a lifelong appreciation for the natural world through hands-on outdoor education. Our programs combine science, environmental stewardship, creative exploration, and Jewish values to provide meaningful learning experiences for children and families in southeastern Wisconsin.
 
     Whether identifying native plants, observing wildlife, conducting nature investigations, or exploring seasonal changes, every adventure encourages children to ask questions, make discoveries, and develop a deeper connection with the world around them.
 
     **Join us as we explore, discover, and grow—one adventure at a time**
   photograph: /images/photographs/children-exploring-trail.jpg
   photograph_description: Two children explore a stone ledge next to a paved trail in a green forest.
-
 highlights:
   - icon: /images/icons/explore-nature.svg
     text: Children learn by exploring natural spaces through hands-on experiences that foster curiosity and confidence.
@@ -24,12 +21,10 @@ highlights:
     text: Our programs encourage observation, questioning, experimentation, and creative problem-solving through engaging science and nature activities.
   - icon: /images/icons/tree-of-life.svg
     text: We weave Jewish teachings into outdoor experiences, helping children develop gratitude, responsibility, kindness, and stewardship for G-d's creation.
-
 after_school_program:
   icon: /images/icons/calendar.svg
   heading: After-School Program
-  text: |
-    Our flagship after-school program encourages children to discover the outdoors through guided nature investigations, environmental science, creative projects, and seasonal exploration. Each week features a new theme designed to spark curiosity and build a deeper understanding of the natural world.
+  text: Our flagship after-school program encourages children to discover the outdoors through guided nature investigations, environmental science, creative projects, and seasonal exploration. Each week features a new theme designed to spark curiosity and build a deeper understanding of the natural world.
   details:
     - label: Ages
       text: Kindergarten and Up (6+)
@@ -42,15 +37,12 @@ after_school_program:
     - label: What to bring
       text: a water bottle
     - label: What to wear
-      text: "Clothes that can handle outdoor exploration (and a little nature dirt!). In the winter use layers: insulated jacket, snow pants, waterproof boots, hat, and warm gloves/mittens."
-  footnote: "*Please inquire about early bird discount pricing"
-
+      text: 'Clothes that can handle outdoor exploration (and a little nature dirt!). In the winter use layers: insulated jacket, snow pants, waterproof boots, hat, and warm gloves/mittens.'
+  footnote: '*Please inquire about early bird discount pricing'
 seasonal_nature_series:
   icon: /images/icons/field-notes.svg
   heading: Seasonal Nature Series
-  text: |
-    Throughout the year, Hickory Lane Explorers offers themed learning experiences. Each series highlights seasonal wildlife, habitats, and ecological changes through engaging outdoor adventures. Every unit combines science, creativity, outdoor exploration, and Jewish values to encourage children to see the beauty and purpose within creation.
-
+  text: Throughout the year, Hickory Lane Explorers offers themed learning experiences. Each series highlights seasonal wildlife, habitats, and ecological changes through engaging outdoor adventures. Every unit combines science, creativity, outdoor exploration, and Jewish values to encourage children to see the beauty and purpose within creation.
 dates:
   heading: Dates
   start_year: 2026
@@ -74,8 +66,7 @@ dates:
     - month: May
       days: 06, 13, 20, 27
     - month: June
-      days: "03"
-
+      days: '03'
 topics:
   heading: Fall Topics
   sessions:
@@ -101,11 +92,10 @@ topics:
       topic: Annual Fall Night Sky Viewing*
     - date: Nov. 19
       topic: Capstone Presentation
-  footnote: "*Dates may change based on guest speakers availability and weather"
-
+  footnote: '*Dates may change based on guest speakers availability and weather'
 registration:
   heading: Ready to Start Your Adventure?
-  text: |
+  text: |-
     Whether your child is fascinated by birds, loves discovering insects, enjoys creating nature-inspired art, or simply thrives outdoors, Hickory Lane Explorers offers a place to explore, learn, and grow.
 
     Registration is now open for our Thursday Nature Explorers After-School Program.
