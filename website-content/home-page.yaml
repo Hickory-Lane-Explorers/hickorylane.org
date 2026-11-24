@@ -68,29 +68,33 @@ dates:
     - month: June
       days: '03'
 topics:
-  heading: Fall Topics
+  heading: Winter Topics
   sessions:
-    - date: Sept. 03
-      topic: Tools of the Explorer
-    - date: Sept. 10
-      topic: The Earth is a Peppercorn
-    - date: Sept. 17
-      topic: The Magnifying Glass
-    - date: Sept. 24
-      topic: The Field Journal & Color Grid
-    - date: Oct. 08
-      topic: Binoculars
-    - date: Oct. 15
-      topic: The Compass
-    - date: Oct. 22
-      topic: Soil and Water Testing
-    - date: Oct. 29
-      topic: Dichotomous Identification Keys
-    - date: Nov. 05
-      topic: Spatial Mapping
-    - date: Nov. 12
-      topic: Annual Fall Night Sky Viewing*
-    - date: Nov. 19
+    - date: Dec. 03
+      topic: Wild Wisconsin Discovering Animal Needs and Habitats
+    - date: Dec. 10
+      topic: Chanukah Party
+    - date: Dec. 17
+      topic: Living Islands — A World Surrounded by Water
+    - date: Dec. 24
+      topic: 'Winter Survival: Fur, Feathers, and Fat'
+    - date: Dec. 31
+      topic: The Ojibwe and the Seasons of the Apostle Islands
+    - date: Jan. 07
+      topic: Whose Tracks Are Those?
+    - date: Jan. 14
+      topic: Lighthouse Detectives & The Mystery of the Forgetful Wickie
+    - date: Jan. 21
+      topic: 'Winter Homes: Dens, Nests, and Shelters'
+    - date: Jan. 28
+      topic: Words, Names, and Stories of the Ojibwe
+    - date: Feb. 04
+      topic: 'Gichigami in Winter: The Changing Ice'
+    - date: Feb. 11
+      topic: Guest Speak - Virtual Ranger
+    - date: Feb. 18
+      topic: Capstone & Junior Ranger Work
+    - date: Feb. 25
       topic: Capstone Presentation
   footnote: '*Dates may change based on guest speakers availability and weather'
 registration:
